@@ -23,7 +23,7 @@ Traditional reverse shells require the target to connect back to you. fwdsh work
 
 ---
 
-## 🧠 How It Works
+## 🔴❗ How It Works
 
 fwdsh consists of **two components** that work together:
 
