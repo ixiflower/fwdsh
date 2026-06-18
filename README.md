@@ -87,7 +87,10 @@ MIT License — see the [LICENSE](LICENSE) file for details.
 ---
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=18&duration=4000&pause=500&color=FF0000&center=true&vCenter=true&width=500&lines=%E2%AD%90+If+you+find+this+useful%2C+drop+a+star!;%F0%9F%94%92+Forward+Shell+%7C+No+reverse+connection+needed;%F0%9F%9B%A1+For+educational+use+only" alt="Footer Banner" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=18&duration=4000&pause=500&color=FFD700&center=true&vCenter=true&width=500&lines=%E2%AD%90+If+you+find+this+useful%2C+drop+a+star!" alt="Star Banner" />
+</p>
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=18&duration=4000&pause=500&color=FF0000&center=true&vCenter=true&width=500&lines=%F0%9F%94%92+Forward+Shell+%7C+No+reverse+connection+needed;%F0%9F%9B%A1+For+educational+use+only" alt="Footer Banner" />
 </p>
 
 <p align="center">
