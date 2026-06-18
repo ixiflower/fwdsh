@@ -1,6 +1,6 @@
 #!/bin/bash
 REPO_URL="https://github.com/ixiflower/fwdsh.git"
-INSTALL_DIR="/etc/fwdsh"
+INSTALL_DIR="$HOME/.fwdsh"
 
 if [ -d "$INSTALL_DIR" ]; then
     echo "[*] Updating existing installation in $INSTALL_DIR"
@@ -12,7 +12,7 @@ fi
 
 echo "[*] Starting rce_server.py in background..."
 cd "$INSTALL_DIR"
-nohup python3 rce_server.py > /var/log/fwdsh.log 2>&1 &
+nohup python3 rce_server.py > "$HOME/.fwdsh.log" 2>&1 &
 PID=$!
-echo $PID > /var/run/fwdsh.pid
+echo $PID > "$HOME/.fwdsh.pid"
 echo "[*] RCE server started (PID: $PID) on port 54321"
