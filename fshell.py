@@ -179,4 +179,5 @@ if __name__ == "__main__":
     np.clean()
     while out.is_alive():
         sleep(1)
-    print("Done!")
+
+    print("See you soon!")
