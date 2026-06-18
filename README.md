@@ -55,24 +55,12 @@ This script runs on **your machine**. It:
 python3 fshell.py http://target:54321/rce.php?cmd=%s
 ```
 
-### 🔄 Data Flow
+### 📝 توضیحات فارسی
 
-```
-You (fshell.py) 
-    ──[echo "ls" > /tmp/in.1234]──→ Target via HTTP/RCE
-                                      │
-                                      ▼
-                                tail -f /tmp/in.1234 
-                                      │
-                                      ▼
-                                /bin/bash -i
-                                      │
-                                      ▼
-                                /tmp/out.1234
-    ──[cat /tmp/out.1234]──→ You read output via HTTP
-```
+**fwdsh** یک ابزار forward shell است که با استفاده از RCE (اجرای کد از راه دور) یک شل تعاملی به شما می‌دهد — بدون نیاز به reverse shell.
+فقط کافیست `rce_server.py` روی سرور قربانی اجرا شود و شما با `fshell.py` به آن متصل شوید. تمام دستورات از طریق HTTP ارسال شده و خروجی دریافت می‌شود.
 
-Everything flows **forward** through the existing RCE channel.
+> استفاده از این ابزار برای مقاصد مخرب غیرقانونی است. مسئولیت استفاده با خودتان می‌باشد.
 
 ---
 
