@@ -55,6 +55,8 @@ This script runs on **your machine**. It:
 python3 fshell.py http://target:54321/rce.php?cmd=%s
 ```
 
+<div dir="rtl">
+
 ### 📝 توضیحات فارسی
 
 **fwdsh** یک ابزار forward shell است که با استفاده از RCE (اجرای کد از راه دور) یک شل تعاملی به شما می‌دهد — بدون نیاز به reverse shell.
@@ -62,17 +64,7 @@ python3 fshell.py http://target:54321/rce.php?cmd=%s
 
 > استفاده از این ابزار برای مقاصد مخرب غیرقانونی است. مسئولیت استفاده با خودتان می‌باشد.
 
----
-
-## 📂 Project Structure
-
-```
-fwdsh/
-├── rce_server.py    # HTTP server on target — executes base64 commands
-├── fshell.py        # Client on your machine — interactive shell over RCE
-├── setup.sh         # One-command setup & deployment script
-└── README.md
-```
+</div>
 
 ---
 
